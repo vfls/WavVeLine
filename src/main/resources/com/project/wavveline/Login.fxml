@@ -47,16 +47,16 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="550.0" VBox.vgrow="ALWAYS">
       <children>
-            <Button id="loginButton" blendMode="DARKEN" layoutX="179.0" layoutY="250.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Login" onAction="#loginHandler">
+            <Button fx:id="loginButton" blendMode="DARKEN" layoutX="179.0" layoutY="250.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Login" onAction="#loginHandler">
                <font>
                   <Font name="Century Gothic" size="14.0" />
                </font></Button>
-            <Button id="registerButton" blendMode="DARKEN" layoutX="179.0" layoutY="298.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Register" onAction="#registerHandler">
+            <Button fx:id="registerButton" blendMode="DARKEN" layoutX="179.0" layoutY="298.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Register" onAction="#registerHandler">
                <font>
                   <Font name="Century Gothic" size="14.0" />
                </font></Button>
-            <TextField id="userField" layoutX="204.0" layoutY="152.0" />
-            <PasswordField id="passwordField" layoutX="204.0" layoutY="191.0" />
+            <TextField fx:id="userField" layoutX="204.0" layoutY="152.0" />
+            <PasswordField fx:id="passwordField" layoutX="204.0" layoutY="191.0" />
             <Label layoutX="93.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" text="Password">
                <font>
                   <Font name="Century Gothic" size="14.0" />

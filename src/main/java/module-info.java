@@ -13,4 +13,6 @@ module com.project.wavveline {
 
     opens com.project.wavveline to javafx.fxml;
     exports com.project.wavveline;
+    exports com.project.wavveline.controller to javafx.fxml;
+    opens com.project.wavveline.controller to javafx.fxml;
 }

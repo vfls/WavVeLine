@@ -47,9 +47,9 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="440.0" prefWidth="299.0" VBox.vgrow="ALWAYS">
          <children>
-            <TextField id="nameRField" layoutX="150.0" layoutY="93.0" />
-            <PasswordField id="passwordRField" layoutX="150.0" layoutY="229.0" />
-            <Button id="createAccountButton" layoutX="198.0" layoutY="323.0" mnemonicParsing="false" text="Create Account" onAction="#accountHandler">
+            <TextField fx:id="nameRField" layoutX="150.0" layoutY="93.0" />
+            <PasswordField fx:id="passwordRField" layoutX="150.0" layoutY="229.0" />
+            <Button fx:id="createAccountButton" layoutX="198.0" layoutY="323.0" mnemonicParsing="false" text="Create Account" onAction="#accountHandler">
                <font>
                   <Font name="Century Gothic" size="14.0" />
                </font>
@@ -95,9 +95,9 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <TextField id="userRField" layoutX="150.0" layoutY="184.0" />
-            <TextField id="JobRField" layoutX="150.0" layoutY="138.0" />
-            <Button id="backButton" layoutX="55.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Back" onAction="#backHandler">
+            <TextField fx:id="userRField" layoutX="150.0" layoutY="184.0" />
+            <TextField fx:id="titleRField" layoutX="150.0" layoutY="138.0" />
+            <Button fx:id="backButton" layoutX="55.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Back" onAction="#backHandler">
                <font>
                   <Font size="14.0" />
                </font>
@@ -107,7 +107,7 @@
                   <Font name="Century Gothic" size="17.0" />
                </font>
             </Label>
-            <TextField id="emailRField" layoutX="150.0" layoutY="269.0" />
+            <TextField fx:id="emailRField" layoutX="150.0" layoutY="269.0" />
          </children>
     </AnchorPane>
   </children>
