@@ -43,7 +43,8 @@ public class RegistrationController {
         }
     }
 
-    public void accountHandler(ActionEvent actionEvent) {
+
+    public boolean accountHandler(ActionEvent actionEvent) {
         String name = nameRField.getText();
         String password = passwordRField.getText();
         String email = emailRField.getText();
@@ -53,7 +54,7 @@ public class RegistrationController {
 
         if (name.isEmpty() || username.isEmpty() || password.isEmpty() || email.isEmpty() || title.isEmpty()) {
             System.out.println("All fields are required.");
-            return;
+            return false;
         }
         try {
             UserDAO userDAO = new UserDAO();
@@ -62,11 +63,13 @@ public class RegistrationController {
             if (isCreated) {
                 System.out.println("Account created successfully!");
                 backHandler(actionEvent);
+                return true;
             } else {
                 System.out.println("Account creation failed. Please try again.");
             }
         } catch (Exception e) {
             System.out.println("An error occurred while creating the account: " + e.getMessage());
         }
+        return false;
     }
 }

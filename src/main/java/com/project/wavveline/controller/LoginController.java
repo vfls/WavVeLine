@@ -1,5 +1,6 @@
 package com.project.wavveline.controller;
 
+import com.project.wavveline.dao.UserDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,7 +21,9 @@ public class LoginController {
     public void loginHandler(ActionEvent actionEvent) {
         String username = userField.getText();
         String password = passwordField.getText();
+        UserDAO userDAO = new UserDAO();
 
+        userDAO.findUser(username, password);
 
 
     }
