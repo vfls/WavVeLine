@@ -43,7 +43,6 @@ public class RegistrationController {
         }
     }
 
-
     public boolean accountHandler(ActionEvent actionEvent) {
         String name = nameRField.getText();
         String password = passwordRField.getText();

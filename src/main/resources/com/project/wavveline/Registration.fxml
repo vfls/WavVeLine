@@ -43,72 +43,77 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:controller="com.project.wavveline.controller.RegistrationController" prefHeight="360.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="440.0" prefWidth="299.0" VBox.vgrow="ALWAYS">
-         <children>
-            <TextField fx:id="nameRField" layoutX="150.0" layoutY="93.0" />
-            <PasswordField fx:id="passwordRField" layoutX="150.0" layoutY="229.0" />
-            <Button fx:id="createAccountButton" layoutX="198.0" layoutY="323.0" mnemonicParsing="false" text="Create Account" onAction="#accountHandler">
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font>
-            </Button>
-            <Label layoutX="71.0" layoutY="94.0" text="Name">
-               <font>
-                  <Font name="Century Gothic" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="56.0" layoutY="185.0" text="Username">
-               <font>
-                  <Font name="Century Gothic" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="59.0" layoutY="230.0" text="Password">
-               <font>
-                  <Font name="Century Gothic" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="64.0" layoutY="139.0" text="Job Title">
-               <font>
-                  <Font name="Century Gothic" size="17.0" />
-               </font>
-            </Label>
-            <Label layoutX="63.0" layoutY="34.0" text="Account Creation">
-               <font>
-                  <Font name="Copperplate Gothic Bold" size="26.0" />
-               </font>
-               <textFill>
-                  <RadialGradient centerX="0.6602209944751382" centerY="0.5" radius="0.5">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.43421053886413574" green="0.030153509229421616" blue="0.030153509229421616" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.4300000071525574" green="0.03009999915957451" blue="0.03009999915957451" opacity="0.5877862572669983" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </RadialGradient>
-               </textFill>
-            </Label>
-            <TextField fx:id="userRField" layoutX="150.0" layoutY="184.0" />
-            <TextField fx:id="titleRField" layoutX="150.0" layoutY="138.0" />
-            <Button fx:id="backButton" layoutX="55.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Back" onAction="#backHandler">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Label layoutX="76.0" layoutY="271.0" text="Email">
-               <font>
-                  <Font name="Century Gothic" size="17.0" />
-               </font>
-            </Label>
-            <TextField fx:id="emailRField" layoutX="150.0" layoutY="269.0" />
-         </children>
-    </AnchorPane>
-  </children>
+<VBox fx:controller="com.project.wavveline.controller.RegistrationController" prefHeight="360.0" prefWidth="395.0"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="440.0" prefWidth="299.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="nameRField" layoutX="150.0" layoutY="93.0"/>
+                <PasswordField fx:id="passwordRField" layoutX="150.0" layoutY="229.0"/>
+                <Button fx:id="createAccountButton" layoutX="198.0" layoutY="323.0" mnemonicParsing="false"
+                        text="Create Account" onAction="#accountHandler">
+                    <font>
+                        <Font name="Century Gothic" size="14.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="71.0" layoutY="94.0" text="Name">
+                    <font>
+                        <Font name="Century Gothic" size="17.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="56.0" layoutY="185.0" text="Username">
+                    <font>
+                        <Font name="Century Gothic" size="17.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="59.0" layoutY="230.0" text="Password">
+                    <font>
+                        <Font name="Century Gothic" size="17.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="139.0" text="Job Title">
+                    <font>
+                        <Font name="Century Gothic" size="17.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="63.0" layoutY="34.0" text="Account Creation">
+                    <font>
+                        <Font name="Copperplate Gothic Bold" size="26.0"/>
+                    </font>
+                    <textFill>
+                        <RadialGradient centerX="0.6602209944751382" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.43421053886413574" green="0.030153509229421616"
+                                               blue="0.030153509229421616"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.4300000071525574" green="0.03009999915957451"
+                                               blue="0.03009999915957451" opacity="0.5877862572669983"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </Label>
+                <TextField fx:id="userRField" layoutX="150.0" layoutY="184.0"/>
+                <TextField fx:id="titleRField" layoutX="150.0" layoutY="138.0"/>
+                <Button fx:id="backButton" layoutX="55.0" layoutY="322.0" mnemonicParsing="false" prefHeight="30.0"
+                        prefWidth="130.0" text="Back" onAction="#backHandler">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="76.0" layoutY="271.0" text="Email">
+                    <font>
+                        <Font name="Century Gothic" size="17.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="emailRField" layoutX="150.0" layoutY="269.0"/>
+            </children>
+        </AnchorPane>
+    </children>
 </VBox>

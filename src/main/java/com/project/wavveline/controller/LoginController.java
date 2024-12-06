@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.ResultSet;
 
 public class LoginController {
 
@@ -23,8 +24,30 @@ public class LoginController {
         String password = passwordField.getText();
         UserDAO userDAO = new UserDAO();
 
-        userDAO.findUser(username, password);
+        try {
+           ResultSet resultSet = userDAO.findUser(username, password);
 
+            if (resultSet !=null && resultSet.next()){
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/project/wavveline/Messenger.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+                Stage stage = new Stage();
+
+                String name = resultSet.getString("name");
+                String title = resultSet.getString("title");
+                System.out.println("Login Sucessful!");
+                System.out.println("Welcome " + name + " - " + title);
+                Stage currentStage = (Stage) ((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
+                currentStage.close();
+                stage.setTitle("WavVeLine Messenger");
+                stage.setScene(scene);
+                stage.show();
+
+            } else {
+                System.out.println("Unable to login!");
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

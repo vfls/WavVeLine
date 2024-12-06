@@ -43,52 +43,59 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:controller="com.project.wavveline.controller.LoginController" prefHeight="399.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="550.0" VBox.vgrow="ALWAYS">
-      <children>
-            <Button fx:id="loginButton" blendMode="DARKEN" layoutX="179.0" layoutY="250.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Login" onAction="#loginHandler">
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font></Button>
-            <Button fx:id="registerButton" blendMode="DARKEN" layoutX="179.0" layoutY="298.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Register" onAction="#registerHandler">
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font></Button>
-            <TextField fx:id="userField" layoutX="204.0" layoutY="152.0" />
-            <PasswordField fx:id="passwordField" layoutX="204.0" layoutY="191.0" />
-            <Label layoutX="93.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" text="Password">
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="93.0" layoutY="152.0" prefHeight="25.0" prefWidth="74.0" text="Username">
-               <font>
-                  <Font name="Century Gothic" size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="137.0" layoutY="62.0" text="WavVeLine" textAlignment="CENTER">
-               <font>
-                  <Font name="Century Gothic" size="34.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.5526315569877625" green="0.07931286841630936" blue="0.07931286841630936" opacity="0.5299999713897705" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Label>
-      </children>
-    </AnchorPane>
-  </children>
+<VBox fx:controller="com.project.wavveline.controller.LoginController" prefHeight="399.0" prefWidth="464.0"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="550.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="loginButton" blendMode="DARKEN" layoutX="179.0" layoutY="250.0" mnemonicParsing="false"
+                        prefHeight="39.0" prefWidth="104.0" text="Login" onAction="#loginHandler">
+                    <font>
+                        <Font name="Century Gothic" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="registerButton" blendMode="DARKEN" layoutX="179.0" layoutY="298.0"
+                        mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" text="Register"
+                        onAction="#registerHandler">
+                    <font>
+                        <Font name="Century Gothic" size="14.0"/>
+                    </font>
+                </Button>
+                <TextField fx:id="userField" layoutX="204.0" layoutY="152.0"/>
+                <PasswordField fx:id="passwordField" layoutX="204.0" layoutY="191.0"/>
+                <Label layoutX="93.0" layoutY="191.0" prefHeight="25.0" prefWidth="74.0" text="Password">
+                    <font>
+                        <Font name="Century Gothic" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="93.0" layoutY="152.0" prefHeight="25.0" prefWidth="74.0" text="Username">
+                    <font>
+                        <Font name="Century Gothic" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="137.0" layoutY="62.0" text="WavVeLine" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic" size="34.0"/>
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.5526315569877625" green="0.07931286841630936"
+                                               blue="0.07931286841630936" opacity="0.5299999713897705"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
 </VBox>

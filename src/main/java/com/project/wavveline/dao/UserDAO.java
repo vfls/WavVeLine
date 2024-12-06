@@ -20,34 +20,28 @@ public class UserDAO {
             statement.setString(4, user.getTitle());
             statement.setString(5, user.getEmail());
 
-            int rowInserted = statement.executeUpdate();
+            statement.executeUpdate();
             return true;
-
         } catch (SQLException e) {
             System.out.println("Unable to add user: " + e.getMessage());
             return false;
         }
-
     }
 
-    //TODO MUDAR FUNÇÃO PARA PUXAR NOME, USERNAME E CARGO DO USUÁRIO
-
-    public boolean findUser(String username, String password) {
+    public ResultSet findUser(String username, String password) {
+        ResultSet resultSet = null;
         try {
             connection = DBConnection.getConnection();
 
-            statement = connection.prepareStatement("SELECT 1, FROM usermsg WHERE username = ? AND password = ?");
+            statement = connection.prepareStatement("SELECT name, title FROM user WHERE username = ? AND password = ?");
             statement.setString(1, username);
             statement.setString(2, password);
+            resultSet = statement.executeQuery();
 
-            try (ResultSet resultSet = statement.executeQuery()) {
-
-                return resultSet.next();
-            }
         } catch (SQLException e) {
             throw new RuntimeException("Login info not found!" + e.getMessage());
         }
+        return resultSet;
     }
-
 }
 
